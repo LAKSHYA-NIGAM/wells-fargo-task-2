@@ -126,3 +126,12 @@ wells-fargo-task-2/
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## ⚖️ Portfolio Rebalancing & Asset Allocation Engine (`PortfolioRebalancingService`)
+
+In wealth management, advisors actively ensure client portfolios do not drift away from target risk models:
+- **Total Portfolio Valuation**: Calculates aggregate position value $\sum (\text{quantity} \times \text{purchasePrice})$ with high monetary precision.
+- **Category Allocation**: Aggregates percentage weights across Equities, Fixed Income, Cash, and Alternative assets.
+- **Drift & Rebalancing**: Compares current portfolio weights against client risk profile targets (e.g. 60% Equity / 40% Fixed Income), issuing discrete `BUY`, `SELL`, or `HOLD` action orders with dollar adjustments.
